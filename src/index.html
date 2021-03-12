@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"> 
+    <title>Trivia 4.1</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <div class="cabecera">
+     </div>
+    </header>
+     <main class="main">
+       <div class="inicio" id="inicio">
+          <h1>Trivia sobre la tierra y el espacio</h1>
+          <figure>
+            <img src="./Images/portada1.jpg" alt="portada1"/>
+          </figure>
+          <p>¿Cuál es tu nombre?</p>
+          <form action="">
+            <label for="name" id="name">
+              <input type="text" class="input" id="nombreJugador"  placeholder="Escribe tu nombre aquí"/>
+            </label>
+          </form>
+          <div>
+            <button class="enviar" id="enviar">Enviar</button>
+          </div>
+        </div>
+        <!--TERMINA INICIO-->
+        <!--------------------- PÁGINA BIENVENIDA....-------------------------->
+        <div class="bienvenida" id="Bienvenida">        
+          <h2>¡HOLA! <span id="nombre"></span><!--el span es una caja contenedora, donde en este caso voy a recibir el nombre,que pedi en la pagina anterior---><br/><!--con este br le digo que pase al siguiente renglon --->Tenemos para ti el reto definitivo para conseguir el título de<br /> "ASTRONOMO ESCOLAR"<br /> Solo debes contestar correctamente las preguntas en la TIERRA o el ESPACIO y la victoria será tuya.<br /> ¡ADELANTE!"</h2>          
+          <div class="seccion" id="opcionTrivia"> <!--EMPIEZAN BOTONES OPCION-->
+          <!--ahora hago un  div para  la imagen del espacio y su boton--->
+            <div class="imgespacio">
+              <figure>
+                <img src="./Images/espacio.jpg"  alt="espacio" width="100"/>
+              </figure>
+              <button class="espacio" id="espacio">Espacio</button>
+            </div>
+            <!--este es el div de la imagen de la tierra y su boton--->
+            <div class="imgtierra" >
+              <figure>
+                <img src="./Images/tierra.jpg" alt="espacio" width="100"/>
+              </figure>
+              <button class="tierra" id="tierra">Tierra</button>
+            </div>
+          </div><!--termina botones opcion-->
+        </div> <!--TERMINA BIENVENIDA-->         
+        <!--------------------INICIA PAGINA PREGUNTAS------------------------------------>
+        <!--aqui empiezan las preguntas,las cuales vamos a dejar en blanco porque queremos llamarlas por array, y luego programar con las condicionales--->
+        <div class="triviaTierra" id="triviaTierra">
+          <figure>
+            <img src="./Images/laTierra.jpg" alt="laTierra"/>
+          </figure>
+          <h1 id="h1questionT" class="h1questionT"></h1>
+          <div class="answerT">
+            <button class="opcionDos" id="bOpt1T"></button>
+            <button class="opcionDos" id="bOpt2T"></button>
+            <button class="opcionDos" id="bOpt3T"></button>
+            <br/>
+            <br/>
+            <!--creamos un boton continuar, para pasar a la pagina siguiente--->
+            <button class="bContinuarT" id="bContinuarT">Continuar</button>
+          </div>
+        </div>
+        <!--estas son las preguntas de la categoria espacio, las cuales estamos desarrollando, por ahora les ponemos textos, para tener en nuestra pagina, mientras programamos por arrays--->
+        <div class="triviaEspacio" id="triviaEspacio">
+          <figure>
+              <img src="./Images/elSol.jpg" alt="elSol"/>
+          </figure>
+          <h1 class="h1questionE" id="h1questionE">El sol es:</h1>  
+          <div class="answerE">   
+            <button class="opcion" id="bOpt1E">Un Planeta</button>
+            <button class="opcion" id="bOpt2E">Una Estrella</button>
+            <button class="opcion" id="bOpt3E">Un Satelite</button>
+          </div>
+          <div>
+            <!--creamos un boton continuar, para pasar a la pagina siguiente--->
+            <button class="bContinuarE" id="bContinuarE">Continuar</button>
+          </div>
+        </div>
+        <!-----------------------EMPIEZA PAGINA FINAL------------------------------>
+        <div class="paginaFinal" id="paginaFinal">
+          <h1>¡FELICIDADES!</h1>
+          <figure>
+            <img src="./Images/portada.jpg" alt="portada"/><!--imagen final--->
+          </figure>
+          <h2>
+            ¡Lo has logrado!<br/><!--con este br le digo que pase al siguiente renglon --->
+            Ahora eres un astronomo Escolar<br/>
+            Puntos conseguido 3/3
+            <span id="resultado"></span>
+          </h2>
+          <button class="volverAJugar" id="volverAjugar">Volver a jugar</button>
+        </div> <!---TERMINA PAGINA FINAL-->
+    </main>
+    <script src="script.js"></script><!--externo a esta pagina hay documentos que debe leer en conjunto con JS-->
+  </body>
+</html>
