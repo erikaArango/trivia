@@ -15,9 +15,16 @@ El lenguaje es escrito, de fácil comprensión y preguntas acordes a los conocim
 
 ### Prototipo en papel:
 
-![prototipo]()
+
+
+![prototipo](https://github.com/erikaArango/trivia/blob/main/images/prototipoPapel.png)
+
+
+Pseudocodigo...
+
+![pseudocodigo](https://github.com/erikaArango/trivia/blob/main/images/pseudocodigo1.png)
 
 
 ### Prototipo de alta fidelidad:
 
-[Link a figma]()
+[Link a figma](https://www.figma.com/file/OMHV8BqBlnQEHuCPpTF42f/Trivia-4.1?node-id=4%3A2)
